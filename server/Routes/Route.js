@@ -17,7 +17,7 @@ const ensureAuthenticated = require("../Middlewares/Auth");
 // post  ---> method 
 // /post/:id -->method post --> edit ; 
 // /post/:id --->method delete --> delete ; 
-
+ 
 router.post('/auth/signup', signupValidation , signup)
 router.post('/auth/login', loginValidation ,  login);
 

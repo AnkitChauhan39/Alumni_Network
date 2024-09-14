@@ -18,27 +18,33 @@ const Login = ({isLogin,setIsLogin}) => {
     });
     const data = await response.json();
     console.log(data);
-    if(data.sucess){
+    if(data.success){
         setIsLogin(!isLogin) ;
     }
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <label>Email:</label>
-      <input
-        type="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        required
-      />
-      <label>Password:</label>
-      <input
-        type="password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        required
-      />
+      <div>
+        <label>Email:</label>
+        <input
+          type="email"
+          className='border-4'
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+      </div>
+      <div>
+        <label>Password:</label>
+        <input
+          type="password"
+          className='border-4'
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+        />
+      </div>
       <button type="submit">Login</button>
     </form>
   );
