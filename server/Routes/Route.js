@@ -21,6 +21,7 @@ const ensureAuthenticated = require("../Middlewares/Auth");
 router.post('/auth/signup', signupValidation , signup)
 router.post('/auth/login', loginValidation ,  login);
 
+
 router.post('/allposts' , ensureAuthenticated ,  AllpostData ) ; 
 
 router.post('/post/add' ,  ensureAuthenticated ,   AddPost) ;

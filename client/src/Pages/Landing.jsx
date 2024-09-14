@@ -1,8 +1,12 @@
+import Navbar from "../Components/Navbar"
+import Dashboard from "../Components/Dashboard"
 
 const Landing = () => {
   return (
-    <div>
-      hello
+    <div className="h-[100vh] flex">
+      <Navbar/>
+      <Dashboard/>
+      
     </div>
   )
 }

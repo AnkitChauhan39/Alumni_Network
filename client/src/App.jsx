@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div>
-      {
+      { 
         !islogin && 
           <div>
             <LoginSignup islogin={islogin} setIsLogin={setIsLogin} />
